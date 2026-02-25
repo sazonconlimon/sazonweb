@@ -27,7 +27,7 @@
 
   <link rel="preconnect" href="https://wa.me" />
   <link rel="icon" href="/images/favic/logo.webp" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css?v=1.1" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favic/apple-touch-icon.png">
@@ -130,10 +130,16 @@
   <header class="header">
     <div class="wrap header__inner">
       <a class="brand" href="/" aria-label="Sazón con Limón">
-        <img src="/images/logo.webp" width="150" height="150" alt="Logo Sazón con Limón" />
+        <img src="/images/logo.webp" width="60" height="60" alt="Logo Sazón con Limón" />
       </a>
 
-      <nav class="nav" aria-label="Navegación">
+      <button class="nav-toggle" data-navbtn aria-label="Menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" data-nav aria-label="Navegación">
         <a class="nav__link" href="/">Inicio</a>
         <a class="nav__link nav__link--active" href="/menu/">Menú</a>
         <a class="nav__link" href="/contacto/">Contacto</a>
@@ -345,7 +351,7 @@
     <span>Pedir Ahora</span>
   </a>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js?v=1.1"></script>
 </body>
 
 </html>

@@ -30,7 +30,7 @@
   <meta property="og:image:alt" content="Ceviche de Sazón con Limón en Puerto Varas" />
 
   <link rel="icon" href="/images/favic/logo.webp" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css?v=1.1" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favic/apple-touch-icon.png">
@@ -155,7 +155,13 @@
         <img src="/images/logo.webp" width="60" height="60" alt="Logo Sazón con Limón" />
       </a>
 
-      <nav class="nav" aria-label="Navegación">
+      <button class="nav-toggle" data-navbtn aria-label="Menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" data-nav aria-label="Navegación">
         <a class="nav__link nav__link--active" href="/">Inicio</a>
         <a class="nav__link" href="/menu/">Menú</a>
         <a class="nav__link" href="/contacto/">Contacto</a>
@@ -494,7 +500,7 @@
     </svg>
   </a>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js?v=1.1"></script>
 </body>
 
 </html>

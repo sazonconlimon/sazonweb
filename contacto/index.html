@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://www.google.com" />
 
   <link rel="icon" href="/images/favic/logo.webp" />
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css?v=1.1" />
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favic/apple-touch-icon.png">
@@ -78,10 +78,16 @@
   <header class="header">
     <div class="wrap header__inner">
       <a class="brand" href="/" aria-label="Sazón con Limón">
-        <img src="/images/logo.webp" width="150" height="150" alt="Logo Sazón con Limón" />
+        <img src="/images/logo.webp" width="60" height="60" alt="Logo Sazón con Limón" />
       </a>
 
-      <nav class="nav" aria-label="Navegación">
+      <button class="nav-toggle" data-navbtn aria-label="Menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" data-nav aria-label="Navegación">
         <a class="nav__link" href="/">Inicio</a>
         <a class="nav__link" href="/menu/">Menú</a>
         <a class="nav__link nav__link--active" href="/contacto/">Contacto</a>
@@ -92,98 +98,74 @@
 
   <main>
     <!-- Page hero -->
-    <section class="pagehero">
-      <div class="wrap pagehero__inner">
-        <div>
-          <p class="kicker">Puerto Varas</p>
-          <h1>Contacto</h1>
-          <p class="lead">
-            Para pedir, lo más rápido es WhatsApp.
-            <strong>Solo delivery y retiro</strong> (no hay consumo en el local).
+    <section class="hero hero--modern hero--contact">
+      <div class="wrap hero__inner animate-on-scroll">
+        <div class="hero__content">
+          <p class="kicker animate-on-scroll" style="transition-delay: 100ms;">Puerto Varas</p>
+          <h1 class="animate-on-scroll" style="transition-delay: 200ms;">Contacto</h1>
+          <p class="lead animate-on-scroll" style="transition-delay: 300ms;">
+            La forma más rápida de comunicarte con nosotros es por WhatsApp. Recuerda que no contamos con consumo en el
+            local, <strong>solo operamos con formato delivery o retiro.</strong>
           </p>
-
-          <div class="ctaRow">
-            <a class="btn btn--primary" href="https://wa.me/56948552174" target="_blank" rel="noopener">Pedir por
-              WhatsApp</a>
-            <a class="btn btn--ghost" href="tel:+56948552174">Llamar</a>
-          </div>
-        </div>
-
-        <div class="pagehero__card">
-          <div class="infoBlock">
-            <h2>Datos</h2>
-
-            <div class="infoRow">
-              <div class="infoLabel">WhatsApp</div>
-              <div class="infoValue">
-                <a class="link" href="https://wa.me/56948552174" target="_blank" rel="noopener">+56 9 4855 2174</a>
-              </div>
-            </div>
-
-            <div class="infoRow">
-              <div class="infoLabel">Retiro</div>
-              <div class="infoValue">San Francisco 1036, 5550591 Puerto Varas</div>
-            </div>
-
-            <div class="infoRow">
-              <div class="infoLabel">Instagram</div>
-              <div class="infoValue">
-                <a class="link" href="https://www.instagram.com/sazonconlimon/" target="_blank"
-                  rel="noopener">@sazonconlimon</a>
-              </div>
-            </div>
-
-            <a class="btn btn--ghost btn--full"
-              href="https://www.google.com/maps/search/?api=1&query=San+Francisco+1036,+Puerto+Varas" target="_blank"
-              rel="noopener">
-              Cómo llegar
-            </a>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact grid -->
+    <!-- Contact Cards Grid -->
     <section class="section">
-      <div class="wrap contactGrid">
-        <div class="card contactCard">
-          <h2>Pedidos</h2>
-          <p class="muted">
-            Escribe qué quieres pedir y si es <strong>delivery</strong> o <strong>retiro</strong>.
-            Si es delivery, agrega tu dirección o sector.
-          </p>
+      <div class="wrap">
+        <div class="grid3" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
 
-          <div class="contactBtns">
-            <a class="btn btn--primary btn--full" href="https://wa.me/56948552174" target="_blank" rel="noopener">Abrir
-              WhatsApp</a>
-            <a class="btn btn--ghost btn--full" href="tel:+56948552174">Llamar ahora</a>
-          </div>
+          <!-- Card 1: WhatsApp -->
+          <article class="card storyCard storyCard--cta"
+            style="background: rgba(37, 211, 102, 0.08); border-color: rgba(37, 211, 102, 0.2);">
+            <div style="font-size: 40px; margin-bottom: 16px;">💬</div>
+            <h3 style="color: #25d366; font-size: 24px;">Haz tu pedido</h3>
+            <p class="muted" style="margin-bottom: 24px;">
+              Escribe qué quieres pedir y si es <strong>delivery</strong> o <strong>retiro</strong>.
+              <br><br>
+              <em style="opacity: 0.8; font-size: 14px;">Tip: si quieres agilizar, manda un mensaje diciendo “Hola,
+                quiero [plato], [cantidad], delivery/retiro, para [hora]”.</em>
+            </p>
+            <a class="btn btn--primary btn--full"
+              style="background-color: #25d366; justify-content: center; margin-bottom: 8px;"
+              href="https://wa.me/56948552174" target="_blank" rel="noopener">Abrir WhatsApp</a>
+            <a class="btn btn--ghost btn--full" style="justify-content: center;" href="tel:+56948552174">Llamar
+              ahora</a>
+          </article>
 
-          <div class="softNote">
-            Tip: si quieres agilizar, manda el mensaje con: <strong>“Hola, quiero [plato], [cantidad], delivery/retiro,
-              para [hora]”</strong>.
-          </div>
-        </div>
-
-        <div class="card contactCard">
-          <h2>Retiro (Puerto Varas)</h2>
-          <p class="muted">
-            Dirección de retiro:
-            <strong>San Francisco 1036, 5550591 Puerto Varas</strong>.
-          </p>
-
-          <div class="mapBox" aria-label="Mapa">
-            <iframe title="Mapa Sazón con Limón" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=San%20Francisco%201036,%20Puerto%20Varas&output=embed"></iframe>
-          </div>
-
-          <div class="contactBtns">
-            <a class="btn btn--ghost btn--full"
+          <!-- Card 2: Location -->
+          <article class="card storyCard">
+            <div style="font-size: 40px; margin-bottom: 16px;">📍</div>
+            <h3 style="font-size: 24px;">Punto de Retiro</h3>
+            <p class="muted">
+              <strong>San Francisco 1036</strong><br>
+              5550591 Puerto Varas, Los Lagos.
+            </p>
+            <div class="mapBox" aria-label="Mapa"
+              style="margin: 16px 0; border-radius: 8px; overflow: hidden; max-height: 140px;">
+              <iframe title="Mapa Sazón con Limón" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                style="height: 140px;"
+                src="https://www.google.com/maps?q=San%20Francisco%201036,%20Puerto%20Varas&output=embed"></iframe>
+            </div>
+            <a class="btn btn--ghost btn--full" style="justify-content: center;"
               href="https://www.google.com/maps/search/?api=1&query=San+Francisco+1036,+Puerto+Varas" target="_blank"
               rel="noopener">
-              Abrir en Google Maps
+              Ver en Google Maps
             </a>
-          </div>
+          </article>
+
+          <!-- Card 3: Social -->
+          <article class="card storyCard">
+            <div style="font-size: 40px; margin-bottom: 16px;">📸</div>
+            <h3 style="font-size: 24px;">Síguenos</h3>
+            <p class="muted" style="margin-bottom: 24px;">Estilos de vida, platillos nuevos, sorteos y todo el detrás de
+              escena de Sazón con Limón.</p>
+            <a class="btn btn--ghost btn--full" style="justify-content: center;"
+              href="https://www.instagram.com/sazonconlimon/" target="_blank" rel="noopener">Ver Instagram
+              (@sazonconlimon)</a>
+          </article>
+
         </div>
       </div>
     </section>
@@ -227,7 +209,17 @@
     </footer>
   </main>
 
-  <script src="/js/main.js"></script>
+  <!-- Sticky WhatsApp Button -->
+  <a href="https://wa.me/56948552174" class="sticky-wa js-sticky-wa" aria-label="Pedir por WhatsApp" target="_blank"
+    rel="noopener">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.662-2.06-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span>Pedir Ahora</span>
+  </a>
+
+  <script src="/js/main.js?v=1.1"></script>
 </body>
 
 </html>
