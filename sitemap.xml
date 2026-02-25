@@ -1,21 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://sazonconlimon.cl/</loc>
-        <lastmod>2026-02-24</lastmod>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://sazonconlimon.cl/contacto/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://sazonconlimon.cl/menu/</loc>
-        <lastmod>2026-02-24</lastmod>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://sazonconlimon.cl/contacto/</loc>
-        <lastmod>2026-02-24</lastmod>
+        <loc>https://sazonconlimon.cl/ceviche-de-salmon-puerto-varas/</loc>
+        <lastmod>2026-02-25</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sazonconlimon.cl/ceviche-salmon-camaron-puerto-varas/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://sazonconlimon.cl/crudos-puerto-varas/</loc>
+        <lastmod>2026-02-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
 </urlset>
